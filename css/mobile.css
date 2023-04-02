@@ -2,6 +2,9 @@
   .container {
     width: 428px;
   }
+  .modal {
+    min-width: 408px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -39,6 +42,13 @@
   /* -----------------------works */
   .works {
     display: none;
+  }
+  /* staffff==================== */
+  .staff-list .item {
+    margin-bottom: 72px;
+  }
+  .staff-list .item:last-child {
+    margin-bottom: 0;
   }
   /* customers------------ */
   .customer-list .customer-item:nth-child(2n) {

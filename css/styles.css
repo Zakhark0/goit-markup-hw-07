@@ -96,7 +96,6 @@ p {
 }
 .nav-list {
   position: relative;
-  margin-left: 76px;
 }
 .nav-list .item {
   margin-right: 40px;
@@ -140,9 +139,6 @@ p {
 .adress-link:focus {
   color: var(--hover-btn-color);
 }
-.adress-list .item + .item {
-  margin-left: 40px;
-}
 
 .adress-link {
   padding: 24px 0px;
@@ -182,6 +178,7 @@ p {
 
 .nav-tablet {
   display: none;
+  margin-left: 76px;
 }
 
 .tablet-adress {
@@ -207,7 +204,6 @@ p {
   background-color: var(--btn-first-color);
   visibility: hidden;
   z-index: 999;
-  max-height: 796px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -259,9 +255,10 @@ p {
 .mob-adress-list {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 40px;
 }
-.mob-adress-list li {
-  margin-bottom: 48px;
+.mob-adress-list li:first-child {
+  margin-bottom: 0;
 }
 .mob-adress-list li:last-child {
   margin-bottom: 40px;
@@ -280,6 +277,7 @@ p {
     url(../images/hero-background-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: var(--background-first-color);
   max-width: 1440px;
   margin-left: auto;
@@ -384,13 +382,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.staff-list .item {
-  margin-bottom: 72px;
-}
-.staff-list .item:last-child {
-  margin-bottom: 0;
 }
 
 .staff-header {
@@ -784,8 +775,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  height: 576px;
+  min-width: 88.1%;
+  min-height: 576px;
   padding: 72px 24px 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),

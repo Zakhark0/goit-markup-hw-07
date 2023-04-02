@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1128px;
+    width: 1158px;
   }
   body {
     font-weight: 400;
@@ -24,6 +24,9 @@
     font-size: 56px;
     line-height: 1.07;
   }
+  .adress-list .item + .item {
+    margin-left: 40px;
+  }
 
   /* about------------------------------ */
   .about-icon-box {
@@ -38,6 +41,12 @@
   }
   .about-list .item:last-child {
     margin-right: 0;
+  }
+
+  .about-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .about-list .item {
@@ -74,6 +83,9 @@
 
   .customer-list .customer-item:last-child {
     margin-right: 0;
+  }
+  .customer-list .customer-item {
+    margin-bottom: 0;
   }
 
   /* foooter--------------------- */

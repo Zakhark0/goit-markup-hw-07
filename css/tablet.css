@@ -6,9 +6,11 @@
   .adress-link {
     font-size: 12px;
     line-height: 1.16;
+    padding: 0;
   }
-  .adress-list .item + .item {
-    margin-left: 0;
+
+  .adress-list .item:first-child {
+    margin-bottom: 6px;
   }
 
   .adress-list {
@@ -51,9 +53,10 @@
     margin-left: 24px;
   }
 
-  .staff-list .item:last-child(-n + 2) {
+  .staff-list .item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
+
   /* about------------------------------------- */
   .about-list {
     flex-wrap: wrap;
@@ -111,10 +114,6 @@
     width: 264px;
     height: 40px;
     margin-right: 24px;
-  }
-
-  .footer-form {
-    margin-right: auto;
   }
 }
 
