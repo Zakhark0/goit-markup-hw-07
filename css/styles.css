@@ -222,6 +222,13 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+.mob-header-link {
+  color: var(--background-first-color);
+  text-decoration: none;
+}
+.mob-header-link.selected {
+  color: #404bbf;
+}
 .mob-nav-list {
   display: block;
 }
